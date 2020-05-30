@@ -1,1 +1,1 @@
-# lottery_managemnet
+# lottery_management
