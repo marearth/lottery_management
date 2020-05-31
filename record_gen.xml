@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+  <index>12</index>
+  <item number="10">
+    <term>42</term>
+    <date>8888/88/88</date>
+    <lucky>
+      <red>06 08 09 13 17 25</red>
+      <blue>10</blue>
+      <prize>nothing</prize>
+    </lucky>
+    <sta>
+      <red>06 08 09 13 17 25</red>
+      <blue>10</blue>
+      <prize>nothing</prize>
+    </sta>
+    <obs>
+      <red>06 08 09 13 17 25</red>
+      <blue>10</blue>
+      <prize>nothing</prize>
+    </obs>
+  </item>
+  <item number="11">
+    <term>43</term>
+    <date>2020/05/28</date>
+    <lucky>
+      <red>01 04 16 21 24 32</red>
+      <blue>08</blue>
+      <prize>nothing</prize>
+    </lucky>
+    <sta>
+      <red>06 13 19 24 27 29</red>
+      <blue>15</blue>
+      <prize>nothing</prize>
+    </sta>
+    <obs>
+      <red>01 04 08 23 30 33</red>
+      <blue>10</blue>
+      <prize>nothing</prize>
+    </obs>
+  </item>
+  <item number="12">
+    <term>44</term>
+    <date>2020/05/31</date>
+    <lucky>
+      <red>01 04 16 21 24 32</red>
+      <blue>08</blue>
+      <prize>empty</prize>
+    </lucky>
+    <sta>
+      <red>03 07 08 10 15 31</red>
+      <blue>06</blue>
+      <prize>empty</prize>
+    </sta>
+    <obs>
+      <red>10 16 20 21 31 32</red>
+      <blue>03</blue>
+      <prize>empty</prize>
+    </obs>
+  </item>
+</data>

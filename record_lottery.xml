@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+  <index>11</index>
+  <item number="0">
+    <date>8888/88/88</date>
+    <term>88</term>
+    <red>88 88 88 88 88 88</red>
+    <blue>88</blue>
+  </item>
+  <item number="1">
+    <date>2020/05/05</date>
+    <term>33</term>
+    <red>07 10 12 21 31 32</red>
+    <blue>01</blue>
+  </item>
+  <item number="2">
+    <date>2020/05/07</date>
+    <term>34</term>
+    <red>02 08 15 16 26 32</red>
+    <blue>03</blue>
+  </item>
+  <item number="3">
+    <date>2020/05/10</date>
+    <term>35</term>
+    <red>10 14 24 25 28 33</red>
+    <blue>11</blue>
+  </item>
+  <item number="4">
+    <date>2020/05/12</date>
+    <term>36</term>
+    <red>07 09 16 22 24 32</red>
+    <blue>06</blue>
+  </item>
+  <item number="5">
+    <date>2020/05/14</date>
+    <term>37</term>
+    <red>01 04 11 13 17 24</red>
+    <blue>15</blue>
+  </item>
+  <item number="6">
+    <date>2020/05/17</date>
+    <term>38</term>
+    <red>01 06 07 18 23 24</red>
+    <blue>15</blue>
+  </item>
+  <item number="7">
+    <date>2020/05/19</date>
+    <term>39</term>
+    <red>02 09 10 11 16 29</red>
+    <blue>02</blue>
+  </item>
+  <item number="8">
+    <date>2020/05/21</date>
+    <term>40</term>
+    <red>01 06 12 16 19 21</red>
+    <blue>04</blue>
+  </item>
+  <item number="9">
+    <date>2020/05/24</date>
+    <term>41</term>
+    <red>06 07 16 22 24 25</red>
+    <blue>13</blue>
+  </item>
+  <item number="10">
+    <date>2020/05/26</date>
+    <term>42</term>
+    <red>02 06 07 11 14 31</red>
+    <blue>03</blue>
+  </item>
+  <item number="11">
+    <date>2020/05/28</date>
+    <term>43</term>
+    <red>01 11 24 25 27 30</red>
+    <blue>07</blue>
+  </item>
+</data>
