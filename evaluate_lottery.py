@@ -28,7 +28,7 @@ def prize_result(red_truth,red_pre,blue_shot):
             return 'fifth(10 yuan)'
     elif sim_red == 3:
         if blue_shot:
-            return 'fifth(5 yuan)'
+            return 'fifth(10 yuan)'
         else:
             return 'nothing'
     else:
