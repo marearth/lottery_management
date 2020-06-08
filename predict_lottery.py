@@ -70,6 +70,36 @@ def next_date(s):
         st = datetime.datetime.strptime(s, '%Y/%m/%d') + datetime.timedelta(days=2)
         return st.strftime('%Y/%m/%d')
 
+def gen_red_in_sequence(value_length):
+    red_balls = []
+    red_pool = [x+1 for x in range(value_length)]
+    #generate first ball
+    red_first = random.sample(red_pool,1)
+    red_pool.remove(red_first[0])
+    red_balls.append(red_first[0])
+
+    #generate second ball
+    red_second = random.sample(red_pool,1)
+    red_pool.remove(red_second[0])
+    red_balls.append(red_second[0])
+
+    red_third = random.sample(red_pool,1)
+    red_pool.remove(red_third[0])
+    red_balls.append(red_third[0])
+
+    red_fourth = random.sample(red_pool,1)
+    red_pool.remove(red_fourth[0])
+    red_balls.append(red_fourth[0])
+
+    red_fifth = random.sample(red_pool,1)
+    red_pool.remove(red_fifth[0])
+    red_balls.append(red_fifth[0])
+
+    red_sixth = random.sample(red_pool,1)
+    red_pool.remove(red_sixth[0])
+    red_balls.append(red_sixth[0])
+
+    return red_balls
 def number_gener_sta(simi_check = 0.25, distri_same = 0.05, bl_red = 0.20 , bl_bl = 0.10):
     with open(r'E:\Code\file\record_lottery.xml','r') as xml_file:
         tree = ET.parse(xml_file)
@@ -97,7 +127,7 @@ def number_gener_sta(simi_check = 0.25, distri_same = 0.05, bl_red = 0.20 , bl_b
     blue = 0
     #generate red number group
     while True:
-        g1 = random.sample([x+1 for x in range(33)], 6)
+        g1 = gen_red_in_sequence(33)
         s1 = similarity(g1,red_neighbor)
         #red neighbor similarity check
         if s1 == 2:
