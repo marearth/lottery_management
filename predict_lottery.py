@@ -73,8 +73,12 @@ def next_date(s):
 
 def gen_red_in_sequence(value_length = 33,nd = '8888/88/88'):
 
-    cur_seconds = '{0:.12f}'.format(time.time())
-    seed_str = nd + "/" + cur_seconds.split('.')[1]
+    # cur_seconds = '{0:.12f}'.format(time.time())
+    seed_part = ''
+    for it in random.sample(range(value_length),6):
+        seed_part = seed_part + str(it)
+    # seed_str = nd + "/" + cur_seconds.split('.')[1]
+    seed_str = nd + "/" + seed_part
     random.seed(a = seed_str)
 
     red_balls = []
@@ -116,10 +120,15 @@ def number_gener_sta(simi_check = 0.25, distri_same = 0.05, bl_red = 0.20 , bl_b
     index_ele = root.find(index_key)
     index_term = int(index_ele.find('term').text)
     index_date = index_ele.find('date').text
-    #parameterize randomness with prediction day and current time in seconds
+    #parameterize randomness with prediction day and random string
     n_date = next_date(index_date)
-    cur_seconds = '{0:.12f}'.format(time.time())
-    seed_str = n_date + "/" +cur_seconds.split('.')[1]
+    # cur_seconds = '{0:.12f}'.format(time.time())
+    # seed_str = n_date + "/" +cur_seconds.split('.')[1]
+    seed_part = ''
+    for it in random.sample(range(33),6):
+        seed_part = seed_part + str(it)
+
+    seed_str = n_date + "/" + seed_part
     random.seed(a = seed_str)
     red_neighbor_string = index_ele.find('red').text.split()
     red_neighbor = []
