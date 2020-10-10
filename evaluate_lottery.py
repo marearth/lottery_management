@@ -66,7 +66,15 @@ index_ele_lot = root_lot.find(index_key)
 index_ele = root.find(index_key)
 lucky_prize = index_ele.find('lucky').find('prize').text
 
+
+
 if not (index_ele_lot is None) and (lucky_prize == 'empty'):
+    #keep consistent date
+    date_lot = index_ele_lot.find('date').text
+    date_gen = index_ele.find('date').text
+    if date_gen != date_lot:
+        index_ele.find('date').text = date_lot
+
     red_string_truth = index_ele_lot.find('red').text
     blue_string_truth = index_ele_lot.find('blue').text
     red_truth = []
