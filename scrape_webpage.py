@@ -41,6 +41,8 @@ def indent(elem, level=0):
 
 url = 'https://www.zhcw.com/ssq/?__f=sy'
 
+# url = 'https://free-ss.best/'
+
 path = '//*[@class ="cz-qiu"]/span'
 
 # driver = webdriver.Chrome()
@@ -69,9 +71,19 @@ driver.quit()
 
 soup = BeautifulSoup(res, 'lxml')
 
+# check page and program
+# with open('page.html', 'wb') as html_file:
+#     html_file.write(res)
+
+
 term = soup.find('div',{'class':'N-dq','data-v':'v1'})
 term_number = term.find('strong',{'class':'N-t'})
-term_value = term_number.text[-2:]
+   
+#optimize display of term
+term_value = term_number.text[-3:]
+if term_value[0] == '0':
+    term_value = term_value[-2:]
+
 
 result_date = soup.find('div',{'class':'cz-rq'})
 result_date_text = result_date.text.split('：')
