@@ -1,5 +1,5 @@
 # lottery_management
-This a Chinese Duotone ball lottery management system written in Python language. The system can scrape lottery results from web page, record data locally,make predictions for next term based on data and evaluate predictions according to lottery result.By using lottery.bat in the windows environment, all scripts can be run automatically.
+This is a Chinese Duotone ball lottery management system written in Python language. The system can scrape lottery results from web page, record data locally,make predictions for next term based on data and evaluate predictions according to lottery result.By using lottery.bat in the windows environment, all scripts can be run automatically.
 # dependency
 python library: lxml and selenium \
 windows execution file: chromedriver.exe 
